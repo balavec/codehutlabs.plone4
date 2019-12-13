@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+    <stylesheet id="++theme++codehutlabs.theme/css/theme.css"
+        insert-after="*"
+        cacheable="True"
+        compression="safe"
+        cookable="True"
+        enabled="True"
+        expression=""
+        media="screen"
+        rel="stylesheet"
+        rendering="link"
+    />
+
+</object>

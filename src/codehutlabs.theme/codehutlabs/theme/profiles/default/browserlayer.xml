@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+
+  <layer name="codehutlabs.theme" interface="codehutlabs.theme.interfaces.IThemeSpecific"/>
+
+</layers>

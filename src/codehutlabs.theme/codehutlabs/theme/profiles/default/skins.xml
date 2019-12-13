@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False" default_skin="codehutlabs.theme">
+
+    <object name="codehutlabs_custom"
+            meta_type="Filesystem Directory View"
+            directory="codehutlabs.theme:skins/codehutlabs_custom"/>
+    <skin-path name="codehutlabs.theme" based-on="Sunburst Theme">
+        <layer name="codehutlabs_custom"
+               insert-after="custom"/>
+    </skin-path>
+
+</object>
+<!---->

@@ -1,0 +1,30 @@
+<configure
+        xmlns="http://namespaces.zope.org/zope"
+        xmlns:five="http://namespaces.zope.org/five"
+        xmlns:i18n="http://namespaces.zope.org/i18n"
+        xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+        xmlns:plone="http://namespaces.plone.org/plone"
+        xmlns:cmf="http://namespaces.zope.org/cmf"
+        xmlns:browser="http://namespaces.zope.org/browser"
+        i18n_domain="codehutlabs.theme">
+
+    <five:registerPackage package="." initialize=".initialize"/>
+
+    <genericsetup:registerProfile
+            name="default"
+            title="codehutlabs.theme"
+            directory="profiles/default"
+            description="Installs the codehutlabs.theme package"
+            provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+    <!-- -*- extra stuff goes here -*- -->
+    <plone:static name="codehutlabs.theme" directory="static" type="theme"/>
+    <cmf:registerDirectory name="codehutlabs_custom"/>
+
+    <include package="z3c.jbot" file="meta.zcml" />
+    <interface name="codehutlabs.theme"
+        interface="codehutlabs.theme.interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        />
+    <browser:jbot directory="static/overrides" />
+</configure>
