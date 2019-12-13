@@ -1,11 +1,8 @@
-====================
-The Starzel Buildout
-====================
+===================
+The Plone4 Buildout
+===================
 
-.. image:: https://travis-ci.org/starzel/buildout.svg?branch=master
-    :target: https://travis-ci.org/starzel/buildout
-
-This is a standard Plone-buildout of the company `Starzel.de <http://www.starzel.de>`_.
+This is a fork of https://github.com/starzel/buildout the 4.3.19.x branch. For details please go to **starzel** repository https://github.com/starzel/buildout - this repository is intended for testing and experimenting.
 
 .. contents::
 
@@ -26,7 +23,7 @@ Quickstart
 
 .. code-block:: shell-session
 
-    $ git clone https://github.com/starzel/buildout SOME_PROJECT
+    $ git clone https://github.com/balavec/codehutlabs.plone4 SOME_PROJECT
     $ cd SOME_PROJECT
 
 Remove all files that are not needed for a project but are only used for the buildout itself.
